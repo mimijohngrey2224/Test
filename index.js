@@ -1,35 +1,35 @@
-//question 1
-// document.addEventListener("DOMContentLoaded", function() {
-//     const taskInput = document.getElementById("taskInput");
-//     const addTaskBtn = document.getElementById("addTaskBtn");
-//     const taskList = document.getElementById("taskList");
+// // question 1
+document.addEventListener("DOMContentLoaded", function() {
+    const taskInput = document.getElementById("taskInput");
+    const addTaskBtn = document.getElementById("addTaskBtn");
+    const taskList = document.getElementById("taskList");
 
-//     addTaskBtn.addEventListener("click", function() {
-//         const taskText = taskInput.value.trim();
-//         if (taskText !== "") {
-//             addTask(taskText);
-//             taskInput.value = "";
-//         }
-//     });
+    addTaskBtn.addEventListener("click", function() {
+        const taskText = taskInput.value.trim();
+        if (taskText !== "") {
+            addTask(taskText);
+            taskInput.value = "";
+        }
+    });
 
-//     function addTask(taskText) {
-//         const li = document.createElement("li");
-//         li.textContent = taskText;
+    function addTask(taskText) {
+        const li = document.createElement("li");
+        li.textContent = taskText;
         
-//         li.addEventListener("click", function() {
-//             li.classList.toggle("complete");
-//         });
+        li.addEventListener("click", function() {
+            li.classList.toggle("complete");
+        });
 
-//         const deleteBtn = document.createElement("button");
-//         deleteBtn.textContent = "Delete";
-//         deleteBtn.addEventListener("click", function() {
-//             taskList.removeChild(li);
-//         });
+        const deleteBtn = document.createElement("button");
+        deleteBtn.textContent = "Delete";
+        deleteBtn.addEventListener("click", function() {
+            taskList.removeChild(li);
+        });
 
-//         li.appendChild(deleteBtn);
-//         taskList.appendChild(li);
-//     }
-// });
+        li.appendChild(deleteBtn);
+        taskList.appendChild(li);
+    }
+});
 
 
 
@@ -80,57 +80,57 @@ console.log(`Account Balance: $${userAccount.getBalance()}`);
 //Create a class called Animal with proprties like name, age, and species. implement methods like eat()and sleep() Then create subclasses like Dog, Cat and Bird inheriting from the Animal class. Show instances of where an animal is eating or sleeping
 
 
-class Animal{
-    constructor(name, age){
+// class Animal{
+//     constructor(name, age){
 
-        this.name = name
-        this.age = age
-        this.species = species
-    }
+//         this.name = name
+//         this.age = age
+//         this.species = species
+//     }
 
-    eat(){
-        return(`eating`)
-    }
+//     eat(){
+//         return(`eating`)
+//     }
 
-    sleep(){
-        return(`sleeping`)
-    }
-}
+//     sleep(){
+//         return(`sleeping`)
+//     }
+// }
 
-class Animal extends creature{
-    constructor(name){
-        super(name, dog)
-    }
+// class Animal extends creature{
+//     constructor(name){
+//         super(name, dog)
+//     }
 
-    role(){
-        return(`A barging dog`)
-    }
-}
+//     role(){
+//         return(`A barging dog`)
+//     }
+// }
 
-class Animal extends beast{
-    constructor(name){
-        super(name, cat)
-    }
+// class Animal extends beast{
+//     constructor(name){
+//         super(name, cat)
+//     }
 
-    role(){
-        return(`A jumping cat`)
-    }
-}
+//     role(){
+//         return(`A jumping cat`)
+//     }
+// }
 
-class Animal extends beast{
-    constructor(name){
-        super(name, bird)
-    }
+// class Animal extends beast{
+//     constructor(name){
+//         super(name, bird)
+//     }
 
-    role(){
-        return(`A flying bird`)
-    }
-} 
+//     role(){
+//         return(`A flying bird`)
+//     }
+// } 
 
-const allAnimal = [new dog ("The dog food"), new cat ("The sleeping cat"), new bird ("A white bird flying")]
+// const allAnimal = [new dog ("The dog food"), new cat ("The sleeping cat"), new bird ("A white bird flying")]
 
-allAnimal.forEach(item)=>{
-    console.log(`animal: ${item.name}, age: ${item.age}, species: ${item.species}`)
-    console.log(item.age());
-}
+// allAnimal.forEach(item)=>{
+//     console.log(`animal: ${item.name}, age: ${item.age}, species: ${item.species}`)
+//     console.log(item.age());
+// }
 
